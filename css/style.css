@@ -513,7 +513,9 @@ body {
   .book-table__button {
     display: flex;
     justify-content: center;
-    margin: 3rem auto 0 auto; }
+    margin: 3rem auto 0 auto;
+    background-color: #fff;
+    padding-bottom: 2rem; }
   .book-table__box {
     display: flex;
     flex-direction: column;
@@ -522,13 +524,20 @@ body {
     height: 50rem; }
     @media (max-width: 75em) {
       .book-table__box {
-        width: 100%; } }
+        width: 100%;
+        padding: 2rem; } }
   .book-table__title {
     font-size: 5rem;
     font-weight: 600;
     color: #000;
     margin-bottom: 3rem;
     margin-top: 10rem; }
+    @media (max-width: 56.25em) {
+      .book-table__title {
+        margin-left: 0rem !important; } }
+    @media (max-width: 75em) {
+      .book-table__title {
+        margin-left: 10rem; } }
   .book-table__form {
     display: flex;
     justify-content: center;
@@ -540,6 +549,9 @@ body {
 .form-rows {
   display: flex;
   justify-content: space-around; }
+
+.form {
+  background-color: #fff !important; }
 
 .event {
   height: 30rem;

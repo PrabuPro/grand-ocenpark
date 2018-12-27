@@ -32,10 +32,12 @@
      }
 
      &__button{
-         display: flex;
-         justify-content: center;
+        display: flex;
+        justify-content: center;
         margin: 3rem auto 0 auto;
-     }
+        background-color: $color-white;
+        padding-bottom: 2rem;
+    }
 
      &__box{
          display: flex;
@@ -46,6 +48,7 @@
 
          @include respond(tab-land) {
              width: 100%;
+             padding: 2rem;
          }
      }
 
@@ -55,6 +58,14 @@
         color: $color-black;
         margin-bottom: 3rem;
         margin-top: 10rem;
+        
+        @include respond(tab-port) {
+            margin-left: 0rem !important;
+        }
+        @include respond(tab-land){
+            margin-left: 10rem;
+        }
+
     }
 
     &__form{
@@ -68,7 +79,7 @@
         // width: 50rem;
 
         @include respond(tab-land) {
-            
+        
         }
     }
 }
@@ -81,4 +92,8 @@
     display: flex;
     justify-content: space-around;
     // align-content: space-between;
+}
+
+.form{
+    background-color: $color-white !important;
 }
