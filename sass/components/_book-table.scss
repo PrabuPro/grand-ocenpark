@@ -32,37 +32,51 @@
      }
 
      &__button{
-        margin-left: 18rem;
-        margin-top: 5rem;
+         display: flex;
+         justify-content: center;
+        margin: 3rem auto 0 auto;
      }
 
      &__box{
-         width: 30rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 50rem;
+         height: 50rem;
+
+         @include respond(tab-land) {
+             width: 20rem;
+         }
      }
 
     &__title{
         font-size: 5rem;
         font-weight: 600;
         color: $color-black;
-        position: absolute;
-        top: 5rem;
-        left: 10rem;
+        margin-bottom: 3rem;
+        margin-top: 10rem;
     }
 
     &__form{
-        position: absolute;
-        top: 15rem;
-        left: 10rem;
-        width: 50rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        // position: absolute;
+        // top: 15rem;
+        // left: 10rem;
+        // width: 50rem;
 
         @include respond(tab-land) {
-            left: 8rem;
+            left: 0rem;
+            margin: 0 auto;
+            widows: 40rem;
         }
     }
 }
 
 .input-field{
-    margin: 2.5rem 0 !important;
+    margin: 2rem 2rem !important;
 }
 
 .form-rows{

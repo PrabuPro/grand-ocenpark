@@ -511,28 +511,36 @@ body {
     color: #000 !important;
     font-weight: 600 !important; }
   .book-table__button {
-    margin-left: 18rem;
-    margin-top: 5rem; }
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto 0 auto; }
   .book-table__box {
-    width: 30rem; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+    height: 50rem; }
+    @media (max-width: 75em) {
+      .book-table__box {
+        width: 20rem; } }
   .book-table__title {
     font-size: 5rem;
     font-weight: 600;
     color: #000;
-    position: absolute;
-    top: 5rem;
-    left: 10rem; }
+    margin-bottom: 3rem;
+    margin-top: 10rem; }
   .book-table__form {
-    position: absolute;
-    top: 15rem;
-    left: 10rem;
-    width: 50rem; }
+    display: flex;
+    justify-content: center;
+    align-content: center; }
     @media (max-width: 75em) {
       .book-table__form {
-        left: 8rem; } }
+        left: 0rem;
+        margin: 0 auto;
+        widows: 40rem; } }
 
 .input-field {
-  margin: 2.5rem 0 !important; }
+  margin: 2rem 2rem !important; }
 
 .form-rows {
   display: flex;
