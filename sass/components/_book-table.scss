@@ -24,6 +24,22 @@
         background-color: $color-white;
      }
 
+     &__label{
+        font-size: 1.45rem !important;
+        color: $color-black !important;
+        font-weight: 600 !important;
+        
+     }
+
+     &__button{
+        margin-left: 18rem;
+        margin-top: 5rem;
+     }
+
+     &__box{
+         width: 30rem;
+     }
+
     &__title{
         font-size: 5rem;
         font-weight: 600;
@@ -31,18 +47,26 @@
         position: absolute;
         top: 5rem;
         left: 10rem;
-
-
     }
 
     &__form{
         position: absolute;
         top: 15rem;
         left: 10rem;
-        width: 70%;
+        width: 50rem;
 
         @include respond(tab-land) {
             left: 8rem;
         }
     }
+}
+
+.input-field{
+    margin: 2.5rem 0 !important;
+}
+
+.form-rows{
+    display: flex;
+    justify-content: space-around;
+    // align-content: space-between;
 }

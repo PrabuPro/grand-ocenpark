@@ -506,6 +506,15 @@ body {
     .book-table {
       background-image: none;
       background-color: #fff; } }
+  .book-table__label {
+    font-size: 1.45rem !important;
+    color: #000 !important;
+    font-weight: 600 !important; }
+  .book-table__button {
+    margin-left: 18rem;
+    margin-top: 5rem; }
+  .book-table__box {
+    width: 30rem; }
   .book-table__title {
     font-size: 5rem;
     font-weight: 600;
@@ -517,10 +526,17 @@ body {
     position: absolute;
     top: 15rem;
     left: 10rem;
-    width: 70%; }
+    width: 50rem; }
     @media (max-width: 75em) {
       .book-table__form {
         left: 8rem; } }
+
+.input-field {
+  margin: 2.5rem 0 !important; }
+
+.form-rows {
+  display: flex;
+  justify-content: space-around; }
 
 .event {
   height: 30rem;
@@ -1072,14 +1088,14 @@ h1 {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btnx-white {
-  background-color: #fff;
-  color: #777; }
+  background-color: #fff !important;
+  color: #777 !important; }
   .btnx-white::after {
     background-color: #fff !important; }
 
 .btnx-green {
-  background-color: #292929;
-  color: #fff; }
+  background-color: #292929 !important;
+  color: #fff !important; }
   .btnx-green::after {
     background-color: #292929 !important; }
 
@@ -1101,7 +1117,7 @@ h1 {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #363636;
+  color: #363636 !important;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #363636;
@@ -1110,7 +1126,7 @@ h1 {
 
 .btn-text:hover {
   background-color: #363636;
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 

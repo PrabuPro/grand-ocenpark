@@ -319,29 +319,62 @@
 
     <section class="section-bookTable">
         <div class="book-table">
-            <h1 class="book-table__title">Book A Table</h1>
-            <div class="book-table__form">
-                <form action="#" class="form">
-
-                    <div class="input-field">
-                        <input id="name" type="text">
-                        <label for="name">Name</label>
+            <div class="row">
+                <div class="book-table__box">
+                    <h1 class="book-table__title">Book A Table</h1>
+                    <div class="book-table__form">
+                        <form action="#" class="form">
+                            <div class="form-rows">
+                                <div class="input-field">
+                                    <input id="beginDate" type="text" class="datepicker">
+                                    <label for="beginDate" class="book-table__label">Date</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="name" type="text">
+                                    <label for="name" class="book-table__label">Name</label>
+                                </div>
+                            </div>
+                            <div class="form-rows">
+                                <div class="input-field">
+                                    <input id="time" type="text" class="timepicker">
+                                    <label for="time" class="book-table__label">Time</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="name" type="text">
+                                    <label for="name" class="book-table__label">Phone</label>
+                                </div>
+                            </div>
+                            <div class="form-rows">
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" disabled selected class="book-table__label">People</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 Peaple</option>
+                                        <option value="3">3 Peaple</option>
+                                        <option value="4">4 Peaple</option>
+                                        <option value="5">5 Peaple</option>
+                                        <option value="6">6 Peaple</option>
+                                        <option value="7">7 Peaple</option>
+                                        <option value="8">8 Peaple</option>
+                                    </select>
+                                    <label>People</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="emai" type="email">
+                                    <label for="emai" class="book-table__label">Email</label>
+                                </div>
+                            </div>
+                            
+                            <div class="from__group book-table__button">
+                                <button class="btnx btnx-green ">
+                                    Book now &rarr;
+                                </button>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="input-field">
-                        <input id="beginDate" type="text" class="datepicker">
-                    </div>
-                   
-                    <div class="from__group ">
-                        <button class="btnx btnx-green">
-                            Book now &rarr;
-                        </button>
-                    </div>
-                </form>
+                </div>
             </div>
-
         </div>
-        
     </section>
 
     <footer class="footer">
@@ -403,6 +436,12 @@
             M.Datepicker.init(calander,{
                 format: 'dd-mm-yy'
             });
+
+            const time = document.querySelector('.timepicker');
+            M.Timepicker.init(time,{});
+
+            const select = document.querySelector('select');
+            M.FormSelect.init(select,{});
 
             $(document).ready(function () {
                     $('.parallax').parallax();
