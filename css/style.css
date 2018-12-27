@@ -522,7 +522,7 @@ body {
     height: 50rem; }
     @media (max-width: 75em) {
       .book-table__box {
-        width: 20rem; } }
+        width: 100%; } }
   .book-table__title {
     font-size: 5rem;
     font-weight: 600;
@@ -533,11 +533,6 @@ body {
     display: flex;
     justify-content: center;
     align-content: center; }
-    @media (max-width: 75em) {
-      .book-table__form {
-        left: 0rem;
-        margin: 0 auto;
-        widows: 40rem; } }
 
 .input-field {
   margin: 2rem 2rem !important; }

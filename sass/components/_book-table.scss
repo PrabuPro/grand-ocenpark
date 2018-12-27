@@ -45,7 +45,7 @@
          height: 50rem;
 
          @include respond(tab-land) {
-             width: 20rem;
+             width: 100%;
          }
      }
 
@@ -68,9 +68,7 @@
         // width: 50rem;
 
         @include respond(tab-land) {
-            left: 0rem;
-            margin: 0 auto;
-            widows: 40rem;
+            
         }
     }
 }
