@@ -719,26 +719,27 @@ h1 {
     height: 30rem;
     width: 100%; }
 
-.navbar {
+.navbarx {
+  height: 0;
   position: relative;
   background-color: #fff; }
-  .navbar__logo-box {
+  .navbarx__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
     @media (max-width: 75em) {
-      .navbar__logo-box {
+      .navbarx__logo-box {
         visibility: visible; } }
-  .navbar__logo {
+  .navbarx__logo {
     height: 8rem; }
-  .navbar__list {
+  .navbarx__list {
     display: flex;
     position: absolute;
     top: 5rem;
     right: 4rem;
     list-style: none; }
     @media (max-width: 75em) {
-      .navbar__list {
+      .navbarx__list {
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -746,22 +747,22 @@ h1 {
         transform: translate(-50%, -50%);
         margin: 2rem 0;
         font-size: rem; } }
-  .navbar__item {
+  .navbarx__item {
     padding: 0 2rem; }
     @media (max-width: 75em) {
-      .navbar__item {
+      .navbarx__item {
         font-size: 5rem; } }
-  .navbar__link {
+  .navbarx__link {
     text-decoration: none;
     font-size: 1.8rem; }
-    .navbar__link:link, .navbar__link:visited {
+    .navbarx__link:link, .navbarx__link:visited {
       color: #fff;
       text-transform: uppercase; }
-    .navbar__link:hover, .navbar__link:active {
+    .navbarx__link:hover, .navbarx__link:active {
       color: #99C6AE;
       font-weight: 500; }
   @media (max-width: 75em) {
-    .navbar {
+    .navbarx {
       visibility: hidden; } }
 
 .popup {
@@ -1039,7 +1040,7 @@ h1 {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 0 2rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;

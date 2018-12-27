@@ -7,15 +7,16 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Compiled and minified CSS -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <title>Grand Oceanpark</title>
 </head>
 
 <body>
-    <!-- <div class="preloader"></div> -->
 
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -25,26 +26,26 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <ul class="navbar__list">
-                    <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">About Us</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">Reservation</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">Contact Us</a></li>
+                <ul class="navbarx__list">
+                    <li class="navbarx__item"><a href="#" class="navbarx__link">Home</a></li>
+                    <li class="navbarx__item"><a href="#" class="navbarx__link">About Us</a></li>
+                    <li class="navbarx__item"><a href="#" class="navbarx__link">Reservation</a></li>
+                    <li class="navbarx__item"><a href="#" class="navbarx__link">Contact Us</a></li>
                 </ul>
             </ul>
         </nav>
     </div>
 
-    <nav class="navbar">
+    <nav class="navbarx">
         <div class="row">
-            <div class="navbar__logo-box">
-                <img src="img/logo2.jpg" alt="Logo" class="navbar__logo">
+            <div class="navbarx__logo-box">
+                <img src="img/logo2.jpg" alt="Logo" class="navbarx__logo">
             </div>
-            <ul class="navbar__list">
-                <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">About Us</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Reservation</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Contact Us</a></li>
+            <ul class="navbarx__list">
+                <li class="navbarx__item"><a href="#" class="navbarx__link">Home</a></li>
+                <li class="navbarx__item"><a href="#" class="navbarx__link">About Us</a></li>
+                <li class="navbarx__item"><a href="#" class="navbarx__link">Reservation</a></li>
+                <li class="navbarx__item"><a href="#" class="navbarx__link">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -313,28 +314,16 @@
             <h1 class="book-table__title">Book A Table</h1>
             <div class="book-table__form">
                 <form action="#" class="form">
-                    <div class="form__group">
-                        <input type="text" placeholder="Full name" class="form__input" id="name" required>
-                        <label for="name" class="form__label">Full Name</label>
+
+                    <div class="input-field">
+                        <input id="name" type="text">
+                        <label for="name">Name</label>
                     </div>
 
-                    <div class="form__group">
-                        <input type="email" placeholder="Your email" class="form__input" id="email" required>
-                        <label for="email" class="form__label">Email Address</label>
+                    <div class="input-field">
+                        <input id="beginDate" type="text" class="datepicker">
                     </div>
-                    <div class="form__group">
-                        <div class="form__radio-group date_time">
-                        <input id="date"  class="form__input" type="datetime-local" name="partydate" value="">
-                        <label for="date" class="form__label">Date</label>
-                    </div>
-                    </div>
-                    <div class="form__gourp">
-                        <div class="form__radio-group">
-                            <input type="text" placeholder="Num Of Persons(Max 20)" class="form__input" id="numOfPersons"
-                                required>
-                            <label for="numOfPersons" class="form__label">Num. Of Person (Max 20)</label>
-                        </div>
-                    </div>
+                   
                     <div class="from__group ">
                         <button class="btn btn-green">
                             Book now &rarr;
@@ -397,27 +386,16 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/parallax.js"></script>
+        <!-- <script src="js/materialize.min.js"></script> -->
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        <script type="text/javascript">
-        (function ($) {
-                function floatLabel(inputType) {
-                    $(inputType).each(function () {
-                        var $this = $(this);
-                        // on focus add cladd active to label
-                        $this.focus(function () {
-                            $this.next().addClass("active");
-                        });
-                        //on blur check field and remove class if needed
-                        $this.blur(function () {
-                            if ($this.val() === '' || $this.val() === 'blank') {
-                                $this.next().removeClass();
-                            }
-                        });
-                    });
-                }
-                // just add a class of "floatLabel to the input field!"
-                floatLabel(".floatLabel");
-            })(jQuery);
+        <script>
+            const calander = document.querySelector('.datepicker');
+            M.Datepicker.init(calander,{
+                format: 'dd-mm-yy'
+            });
+
         </script>
     </div>
 </body>
