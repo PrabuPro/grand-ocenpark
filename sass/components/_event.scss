@@ -1,0 +1,112 @@
+.event{
+    height: 30rem;
+    // background-image: url(/img/banner.jpeg);
+    background-image: linear-gradient(105deg,
+                    rgba($color-white, .9) 0%,
+                    rgba($color-white, .9) 50%,
+                    transparent 50%),
+                    url(../img/banner.jpeg);
+    background-size: contain;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    position: relative;
+
+    @include respond(tab-land) {
+        font-size: .5rem;
+        background-image: linear-gradient(105deg,
+                        rgba($color-white, .9) 0%,
+                        rgba($color-white, .9) 60%,
+                        transparent 50%),
+                        url(../img/banner.jpeg);
+    }
+    @include respond(tab-port) {
+        font-size: .5rem;
+        background-image: none;
+        background-color: $color-white;
+    }
+
+    &__content{
+        color: $color-black;
+        position: absolute;
+        top: 7rem;
+        left: 8rem;
+        font-size: 2rem;
+        color: $color-black;
+
+        @include respond(tab-land) {
+            left: 20rem;
+        }
+
+        @include respond(tab-port) {
+            left: 15rem;
+        }
+        
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: .5rem;
+        color: $color-black;
+
+        @include respond(tab-land) {
+            // position: absolute;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+    &__title-2 {
+        font-size: 6rem;
+        top: 10rem;
+
+        @include respond(tab-land) {
+            // position: absolute;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+
+    &__countdown{
+        position: absolute;
+        display: flex;
+        left: -10rem;
+        top: 4rem;
+        // float: left;
+        // left: 10rem !important;
+
+        &-block{
+            display: inline-block;
+            margin: 0 2rem;
+        }
+
+        &-number{
+            font-size: 5rem;
+            color: red;
+            font-weight: 600;
+
+            @include respond(tab-land) {
+                font-size: 5rem;
+            }
+            @include respond(tab-port) {
+                font-size: 3rem;
+            }
+        }
+        
+        &-date{
+            position: absolute;
+            top: 6.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $color-gray-dark-2;
+
+            @include respond(tab-land) {
+                top: 5.5rem;
+            }
+            @include respond(tab-port) {
+                top: 5rem;
+                font-size: 2rem;
+            }
+        }
+    }
+    
+}

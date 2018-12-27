@@ -1,0 +1,43 @@
+.happy-hour{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e74c3c;
+    height: 20rem;
+    width: 100%;
+
+    @include respond(tab-land){
+        height: 40rem;
+    }
+
+    &__text{
+        font-family: 'Luckiest Guy',cursive;
+        margin-left: 6rem;
+        flex: 0 0 18%;
+        color: $color-white;
+        font-size: 6rem;
+        line-height: 1;
+        // font-weight: 200;
+        @include respond(tab-land) {
+            display: flex;
+            flex: 1;
+        }
+    }
+    
+    &__para{
+        flex: 1 0 50%;
+        font-size: 1.5rem;
+        color: $color-white;
+        align-self: center;
+        padding:0 4rem;
+        // padding: 0 6rem;
+
+    }
+
+    &__button{
+        flex: 0 0 18%;
+        align-self: center;
+        // margin-right: 6rem;
+    }
+}

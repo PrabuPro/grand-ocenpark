@@ -1,0 +1,21 @@
+.intro-box{
+    padding: 0;
+    margin: 8rem 4rem;
+    &__title{
+        color: $color-black;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+        font-weight: 600;
+    }
+    
+    &__para{
+        color: $color-black;
+        text-align: justify;
+    }
+
+    &__image{
+        height: 30rem;
+        width: 100%;
+    }
+}

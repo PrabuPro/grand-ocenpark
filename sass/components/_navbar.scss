@@ -1,0 +1,66 @@
+.navbar{
+    position: relative;
+    background-color: #fff;
+
+    &__logo-box{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+         @include respond(tab-land) {
+             visibility: visible;
+            }
+        }
+        
+    &__logo {
+        height: 8rem;
+
+    }
+
+    &__list{
+        display: flex;
+        position: absolute;
+        top: 5rem;
+        right:4rem;
+        list-style: none;
+
+         @include respond(tab-land) {
+             display: inline-block;
+             @include absCenter;
+             margin: 2rem 0;
+             font-size: rem;
+         }
+    }
+
+    &__item{
+        padding: 0 2rem;
+         @include respond(tab-land) {
+            font-size: 5rem;
+         }
+
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 1.8rem; 
+        
+        &:link,
+        &:visited{
+            color: $color-white;
+            text-transform: uppercase;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-secondary-light;
+            font-weight: 500;
+            
+        }
+    }
+
+    @include respond(tab-land){
+        visibility: hidden;
+    }
+
+}
+
+

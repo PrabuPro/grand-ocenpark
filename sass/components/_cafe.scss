@@ -1,0 +1,30 @@
+.cafe{
+    margin: 10rem 0;
+    background-color: $color-white;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+        background-color: rgba($color-white, .8);
+        margin: 0;
+    }
+
+    @include respond(tab-land) {
+        margin: 0;
+    }
+
+    &__title{
+        font-size: 7rem;
+        font-weight: 600;
+        columns: $color-black;
+        margin-bottom: 1rem;
+    }
+    
+    &__para{
+        font-size: 1.5rem;
+        font-weight: 400;
+        columns: $color-black;
+        margin-bottom: 1rem;
+    }
+
+
+}

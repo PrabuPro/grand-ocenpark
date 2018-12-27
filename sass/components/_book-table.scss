@@ -1,0 +1,48 @@
+.book-table{
+    height: 60rem;
+    // background-image: url(/img/banner.jpeg);
+    background-image: linear-gradient(90deg,
+                    rgba($color-white, 1) 50%,
+                    rgba($color-white, .9) 0%,
+                    transparent 50%),
+                    url(../img/restaurent.jpg);
+    background-size: cover;
+     background-position: top;
+    // border-radius: 3px;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    position: relative;
+
+     @include respond(tab-land) {
+        background-image: linear-gradient(90deg,
+                        rgba($color-white, 1) 60%,
+                        rgba($color-white, .9) 0%,
+                        transparent 50%),
+                        url(../img/restaurent.jpg);
+     }
+     @include respond(tab-port) {
+        background-image: none;
+        background-color: $color-white;
+     }
+
+    &__title{
+        font-size: 5rem;
+        font-weight: 600;
+        color: $color-black;
+        position: absolute;
+        top: 5rem;
+        left: 10rem;
+
+
+    }
+
+    &__form{
+        position: absolute;
+        top: 15rem;
+        left: 10rem;
+        width: 70%;
+
+        @include respond(tab-land) {
+            left: 8rem;
+        }
+    }
+}
