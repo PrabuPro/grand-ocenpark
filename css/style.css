@@ -435,10 +435,16 @@ body {
       .chef__img {
         align-items: flex-end; } }
 
-.parallax-window {
-  min-height: 50rem;
+.parallax-container {
+  height: 400px; }
+
+.overlay-dark {
   background: transparent;
   background-color: rgba(0, 0, 0, 0.3); }
+
+.overlay-light {
+  background: transparent;
+  background-color: rgba(255, 255, 255, 0.3); }
 
 .parallax-window-2 {
   min-height: 50rem;
@@ -449,13 +455,15 @@ body {
   justify-content: center;
   align-items: center; }
   .parallax-window-2__box {
+    margin: 10rem;
     height: 30rem;
     background-color: rgba(54, 54, 54, 0.5); }
     @media (max-width: 75em) {
       .parallax-window-2__box {
-        margin: 0 5rem;
-        height: 25rem; } }
+        margin: 5rem 5rem;
+        height: 35rem; } }
   .parallax-window-2__title {
+    color: #fff;
     font-size: 6rem;
     text-align: center;
     margin-top: 2rem;
@@ -464,13 +472,14 @@ body {
       .parallax-window-2__title {
         font-size: 5rem;
         padding-top: 2rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 2rem; } }
     @media (max-width: 56.25em) {
       .parallax-window-2__title {
         font-size: 3rem;
         padding-top: 2rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 2rem; } }
   .parallax-window-2__para {
+    color: #fff;
     padding: 0 10rem;
     font-size: 2rem;
     text-align: justify; }
@@ -480,7 +489,7 @@ body {
         padding: 0 2rem; } }
     @media (max-width: 56.25em) {
       .parallax-window-2__para {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 0 2rem; } }
 
 .book-table {

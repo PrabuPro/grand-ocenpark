@@ -1,8 +1,17 @@
-.parallax-window {
-    min-height: 50rem;
+.parallax-container {
+  height: 400px;
+}
+
+.overlay-dark{
     background: transparent;
     background-color: rgba(0, 0, 0, .3);
 }
+
+.overlay-light{
+    background: transparent;
+    background-color: rgba(255, 255, 255, .3);
+}
+
 
 .parallax-window-2 {
     min-height: 50rem;
@@ -12,37 +21,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     &__box{
+        margin: 10rem;
         height: 30rem;
         background-color: rgba($color-primary, .5);
-
+        
         @include respond(tab-land) {
-            margin: 0 5rem;
-            height: 25rem;
+            margin: 5rem 5rem;
+            height: 35rem;
         }
         
     }
     
     &__title{
+        color: $color-white;
         font-size: 6rem;
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
-
+        
         @include respond(tab-land){
             font-size: 5rem;
             padding-top: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
         @include respond(tab-port){
             font-size: 3rem;
             padding-top: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
     }
-
+    
     &__para{
+        color: $color-white;
         padding: 0 10rem;
         font-size: 2rem;
         text-align: justify;
@@ -52,10 +64,16 @@
             padding: 0 2rem;
         }
         @include respond(tab-port) {
-            font-size: 2rem;
+            font-size: 1.8rem;
             padding: 0 2rem;
         }
     }
 
 
 }
+
+// .parallax-window {
+//     min-height: 50rem;
+//     background: transparent;
+//     background-color: rgba(0, 0, 0, .3);
+// }
