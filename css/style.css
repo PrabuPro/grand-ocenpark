@@ -466,6 +466,7 @@ body {
     color: #fff;
     font-size: 6rem;
     text-align: center;
+    padding-top: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem; }
     @media (max-width: 75em) {
@@ -1046,10 +1047,10 @@ h1 {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
-.btn, .btn:link, .btn:visited {
+.btnx, .btnx:link, .btnx:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 2rem;
+  padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
@@ -1058,31 +1059,31 @@ h1 {
   border: none;
   cursor: pointer; }
 
-.btn:hover {
+.btnx:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
+  .btnx:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active, .btn:focus {
+.btnx:active, .btnx:focus {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn-white {
+.btnx-white {
   background-color: #fff;
   color: #777; }
-  .btn-white::after {
-    background-color: #fff; }
+  .btnx-white::after {
+    background-color: #fff !important; }
 
-.btn-green {
+.btnx-green {
   background-color: #292929;
   color: #fff; }
-  .btn-green::after {
-    background-color: #292929; }
+  .btnx-green::after {
+    background-color: #292929 !important; }
 
-.btn::after {
+.btnx::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -1094,7 +1095,7 @@ h1 {
   z-index: -1;
   transition: all .4s; }
 
-.btn-animated {
+.btnx-animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
