@@ -19,6 +19,14 @@
 
 <body>
 
+<div class="preload">
+    <!-- <h1>Grand Ocenpark</h1> -->
+    <img src="img/preloader3.gif">  
+    <img src="img/logo2.jpg" alt="">
+</div>
+
+<div class="content">
+
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__button">
@@ -449,6 +457,32 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script>
+
+            $(function() {
+                $(".preload").fadeOut(2000, function() {
+                    $(".content").fadeIn(1000);
+                    
+                    const calander = document.querySelector('.datepicker');
+                    M.Datepicker.init(calander, {
+                    format: 'dd-mm-yy'
+                    });
+
+                    const time = document.querySelector('.timepicker');
+                    M.Timepicker.init(time, {});
+
+                    const select = document.querySelector('select');
+                    M.FormSelect.init(select, {});
+
+                    AOS.init();
+
+                    $(document).ready(function () {
+                    $('.parallax').parallax();
+                    });
+                
+                });
+
+            });
+
             const calander = document.querySelector('.datepicker');
             M.Datepicker.init(calander, {
                 format: 'dd-mm-yy'
@@ -469,7 +503,7 @@
     </div>
 
 
-
+</div>
 
 </body>
 
