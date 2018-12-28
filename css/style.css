@@ -178,6 +178,27 @@
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.header-aboutus {
+  z-index: -999;
+  height: 65vh;
+  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/beach-garden.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  top: 0; }
+  .header-aboutus__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header-aboutus__logo {
+    height: 3.5rem; }
+  .header-aboutus__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
 .footer {
   background-color: #333;
   padding: 10rem 0;
@@ -278,10 +299,11 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
+    padding-top: 20rem;
     display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
+    font-size: 8rem;
+    font-weight: 800;
+    letter-spacing: 2rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -347,67 +369,6 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite; }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg); } }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s; }
-
-@-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0px;
-    opacity: 1; } }
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0;
-    opacity: 1; } }
-
-#myDiv {
-  display: none;
-  text-align: center; }
-
 .happy-hour {
   display: flex;
   align-content: space-between;
@@ -418,7 +379,8 @@ body {
   width: 100%; }
   @media (max-width: 75em) {
     .happy-hour {
-      height: 40rem; } }
+      flex-direction: column;
+      height: 30rem; } }
   .happy-hour__text {
     font-family: 'Luckiest Guy',cursive;
     margin-left: 6rem;
@@ -428,17 +390,33 @@ body {
     line-height: 1; }
     @media (max-width: 75em) {
       .happy-hour__text {
+        font-size: 5.5rem;
         display: flex;
-        flex: 1; } }
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        margin-left: 0; } }
   .happy-hour__para {
     flex: 1 0 50%;
     font-size: 1.5rem;
     color: #fff;
     align-self: center;
     padding: 0 4rem; }
+    @media (max-width: 75em) {
+      .happy-hour__para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -3rem; } }
   .happy-hour__button {
     flex: 0 0 18%;
     align-self: center; }
+    @media (max-width: 75em) {
+      .happy-hour__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem; } }
 
 .cafe {
   margin: 10rem 0;
@@ -1220,6 +1198,11 @@ h1 {
   .section-discover .heading-secondary {
     color: #fff; }
 
+.section-img {
+  height: 40rem;
+  background-image: url(../img/banner.jpeg);
+  background-size: cover; }
+
 .section-parallax .parallax-container {
   height: 60rem; }
 
@@ -1287,3 +1270,7 @@ h1 {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-stories {
+  position: relative;
+  padding: 10rem 0; }

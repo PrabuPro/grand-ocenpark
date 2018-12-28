@@ -8,7 +8,8 @@
     width: 100%;
 
     @include respond(tab-land){
-        height: 40rem;
+        flex-direction: column;
+        height: 30rem;
     }
 
     &__text{
@@ -20,8 +21,12 @@
         line-height: 1;
         // font-weight: 200;
         @include respond(tab-land) {
+            font-size: 5.5rem; 
             display: flex;
-            flex: 1;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2rem;
+            margin-left: 0;
         }
     }
     
@@ -32,6 +37,13 @@
         align-self: center;
         padding:0 4rem;
         // padding: 0 6rem;
+        @include respond(tab-land) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -3rem;
+            
+        }
 
     }
 
@@ -39,5 +51,12 @@
         flex: 0 0 18%;
         align-self: center;
         // margin-right: 6rem;
+        @include respond(tab-land) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 2rem;
+
+        }
     }
 }
