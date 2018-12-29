@@ -39,7 +39,7 @@
                     <li class="navbarx__item"><a href="#" class="navbarx__link">Home</a></li>
                     <li class="navbarx__item"><a href="#" class="navbarx__link">About Us</a></li>
                     <li class="navbarx__item"><a href="#" class="navbarx__link">Reservation</a></li>
-                    <li class="navbarx__item"><a href="#" class="navbarx__link">Contact Us</a></li>
+                    <li class="navbarx__item"><a href="#popup" class="navbarx__link">Contact Us</a></li>
                 </ul>
             </ul>
         </nav>
@@ -54,7 +54,7 @@
                 <li class="navbarx__item"><a href="/index.html" class="navbarx__link">Home</a></li>
                 <li class="navbarx__item"><a href="/about-us.html" class="navbarx__link">About Us</a></li>
                 <li class="navbarx__item"><a href="/reservations.html" class="navbarx__link">Reservation</a></li>
-                <li class="navbarx__item"><a href="#" class="navbarx__link">Contact Us</a></li>
+                <li class="navbarx__item"><a href="#popup" class="navbarx__link">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -432,22 +432,19 @@
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
-                <img src="img/banner.jpeg" alt="Tour photo" class="popup__img">
-                <img src="img/banner.jpeg" alt="Tour photo" class="popup__img">
+                <img src="/img/food-banner3.jpg" class="popup__img" alt="">
             </div>
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-small">Promotion Time</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Hurry &ndash; Get your meal now</h3>
-                <p class="popup__text">
+                <h2 class="heading-secondary u-margin-bottom-small popup__title">Promotion</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small popup__subtext">Hurry &ndash; Get your meal now</h3>
+                <p class="popup__text popup__subtext">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa unde eaque architecto provident
-                    accusamus inventore perferendis, aut corrupti voluptatibus minus nulla deleniti vero omnis minima.
-                    Quis minus obcaecati officiis autem! Tenetur assumenda delectus blanditiis est eius voluptates
-                    facere harum voluptatum. Cum, inventore? Dicta ullam reiciendis assumenda nam cumque amet nisi!
                 </p>
-                <a href="#" class="btn btn-green">Get Promotion</a>
+                <a href="#" class="btnx btnx-green popup__button">Get Promotion</a>
             </div>
         </div>
+    </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- <script src="js/parallax.js"></script> -->
@@ -478,27 +475,13 @@
                     $(document).ready(function () {
                     $('.parallax').parallax();
                     });
+
+                    setTimeout(function(){self.location.href='#popup'},4000);
                 
                 });
 
             });
 
-            const calander = document.querySelector('.datepicker');
-            M.Datepicker.init(calander, {
-                format: 'dd-mm-yy'
-            });
-
-            const time = document.querySelector('.timepicker');
-            M.Timepicker.init(time, {});
-
-            const select = document.querySelector('select');
-            M.FormSelect.init(select, {});
-
-            AOS.init();
-
-            $(document).ready(function () {
-                $('.parallax').parallax();
-            });
         </script>
     </div>
 
