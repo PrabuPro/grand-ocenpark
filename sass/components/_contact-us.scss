@@ -1,0 +1,41 @@
+.contact-us{
+    display: flex;
+    padding: 10rem 10rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 50rem;
+
+    & > *:not(:last-child){
+        border-right: 1px solid black;
+    }
+
+    & > * {
+        padding: 0 4rem;
+        flex: 1 1 33.33%;
+        align-self: stretch;
+    } 
+
+    &__call-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__stay-connected {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon{
+        fill: black;
+    }
+}
+
