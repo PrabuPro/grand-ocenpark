@@ -27,6 +27,10 @@ body {
 
         &--contact-us{
             font-size: 7rem;
+            
+            @include respond(tab-port) {
+                font-size: 2.5rem !important;
+            }
         }
 
         /* animation-delay: 1s; */
