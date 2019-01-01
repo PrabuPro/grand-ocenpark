@@ -701,11 +701,17 @@ body {
   margin: 2rem 2rem !important; }
   .input-field__contact-us {
     width: 50rem !important; }
+    @media (max-width: 56.25em) {
+      .input-field__contact-us {
+        width: 20rem !important; } }
   .input-field__message {
     padding-top: 15rem; }
 
 .input-field-3 {
   width: 40rem; }
+  @media (max-width: 56.25em) {
+    .input-field-3 {
+      width: 20rem; } }
 
 .form-rows {
   display: flex;

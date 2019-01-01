@@ -121,6 +121,10 @@
 
     &__contact-us{
         width: 50rem !important;
+
+        @include respond(tab-port) {
+            width: 20rem !important;
+        }
     }
 
     &__message {
@@ -130,6 +134,10 @@
 }
 .input-field-3{
     width: 40rem;
+
+    @include respond(tab-port) {
+        width: 20rem;
+    }
 }
 
 .form-rows{
