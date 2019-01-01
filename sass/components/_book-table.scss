@@ -118,6 +118,15 @@
 
 .input-field{
     margin: 2rem 2rem !important;
+
+    &__contact-us{
+        width: 50rem !important;
+    }
+
+    &__message {
+        padding-top: 15rem;
+    }
+    
 }
 .input-field-3{
     width: 40rem;
@@ -144,4 +153,8 @@
     @include respond(tab-land){
         width: 40rem;
     }
+}
+
+.materialize-textarea{
+    height: 15rem !important;
 }

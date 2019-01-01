@@ -699,6 +699,10 @@ body {
 
 .input-field {
   margin: 2rem 2rem !important; }
+  .input-field__contact-us {
+    width: 50rem !important; }
+  .input-field__message {
+    padding-top: 15rem; }
 
 .input-field-3 {
   width: 40rem; }
@@ -720,6 +724,9 @@ body {
   @media (max-width: 75em) {
     .form-2 {
       width: 40rem; } }
+
+.materialize-textarea {
+  height: 15rem !important; }
 
 .event {
   height: 30rem;
