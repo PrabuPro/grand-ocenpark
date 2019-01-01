@@ -43,7 +43,7 @@
             <li class="navbarx__item"><a href="/index.html" class="navbarx__link">Home</a></li>
             <li class="navbarx__item"><a href="/about-us.html" class="navbarx__link">About Us</a></li>
             <li class="navbarx__item"><a href="/reservations.html" class="navbarx__link">Reservation</a></li>
-            <li class="navbarx__item"><a href="#" class="navbarx__link">Contact Us</a></li>
+            <li class="navbarx__item"><a href="/contact-us.html" class="navbarx__link">Contact Us</a></li>
         </ul>
     </div>
 </nav>
@@ -58,48 +58,124 @@
 
 <body>
     <main>
-
         <div class="contact-us">
-            <div class="contact-us__call-us">
-                <svg>
-                    <use xlink:href="img/symbol-defs.svg#icon-home" class="contact-us__icon"></use>
+            <div class="contact-us__section">
+                <svg class="contact-us__img">
+                    <use xlink:href="img/sprite.svg#icon-volume-control-phone"></use>
                 </svg>
-                01122334455
+                <h4 class="contact-us__text">Lorem ipsum dolor sit</h4>
             </div>
-            <div class="contact-us__address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, dolore?</div>
-            <div class="contact-us__stay-connected">Lorem ipsum dolor sit amet.</div>
+            <div class="contact-us__section">
+                <svg class="contact-us__img">
+                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <h1 class="contact-us__text">011223355446</h1>
+            </div>
+            <div class="contact-us__section">
+                <svg class="contact-us__img">
+                    <use xlink:href="img/sprite.svg#icon-comments-o"></use>
+                </svg>
+                <h4 class="contact-us__text">Lorem ipsum dolor sit</h4>
+            </div>
         </div>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1979.0142403556943!2d79.84129922346031!3d7.23759076239605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64d095806b9e9f46!2sGrand+Oceanpark!5e0!3m2!1sen!2slk!4v1546225390981"
             width="100%" height="450" frameborder="0" style="border:none; display: block;" allowfullscreen></iframe>
 
+        <section class="section-bookTable">
+            <div class="book-table">
+                <div class="row">
+                    <div class="book-table__box">
+                        <h1 class="book-table__title">Book a Table</h1>
+                        <div class="book-table__form">
+                            <form action="#" class="form">
+                                <div class="form-rows-3">
+                                    <div class="input-field-3">
+                                        <input id="beginDate" type="text" class="datepicker">
+                                        <label for="beginDate" class="book-table__label">Date</label>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <input id="name" type="text">
+                                    <label for="name" class="book-table__label">Name</label>
+                                </div>
+
+                                <div class="form-rows">
+                                    <div class="input-field">
+                                        <input id="time" type="text" class="timepicker">
+                                        <label for="time" class="book-table__label">Time</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="name" type="text">
+                                        <label for="name" class="book-table__label">Phone</label>
+                                    </div>
+                                </div>
+                                <div class="form-rows">
+                                    <div class="input-field">
+                                        <select>
+                                            <option value="" disabled selected class="book-table__label">People</option>
+                                            <option value="1">1 Person</option>
+                                            <option value="2">2 People</option>
+                                            <option value="3">3 People</option>
+                                            <option value="4">4 People</option>
+                                            <option value="5">5 People</option>
+                                            <option value="6">6 People</option>
+                                            <option value="7">7 People</option>
+                                            <option value="8">8 People</option>
+                                        </select>
+                                        <!-- <label>People</label> -->
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="emai" type="email">
+                                        <label for="emai" class="book-table__label">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="from__group book-table__button">
+                                    <button class="btnx btnx-green ">
+                                        Book now &rarr;
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-<footer class="footer">
-    <div class="footer__logo-box">
-        <img src="img/logo2.jpg" alt="Full logo" class="footer__logo">
-    </div>
-    <div class="row">
-        <div class="col-1-of-2">
-            <div class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                </ul>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo2.jpg" alt="Full logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ducimus quam. Modi adipisci,
+                    veritatis odit ipsum quibusdam nam sequi debitis, blanditiis, est ratione vel soluta!
+                </p>
             </div>
         </div>
-        <div class="col-1-of-2">
-            <p class="footer__copyright">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ducimus quam. Modi adipisci,
-                veritatis odit ipsum quibusdam nam sequi debitis, blanditiis, est ratione vel soluta!
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- <script src="js/parallax.js"></script> -->
+    <!-- <script src="js/materialize.min.js"></script> -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 
