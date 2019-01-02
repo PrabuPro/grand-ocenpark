@@ -7,23 +7,21 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 5rem;
+    right: 5rem;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer; }
   .navigation__background {
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
-    background-image: radial-gradient(#4D4F54, #292929);
-    z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+    top: 5.5rem;
+    right: 5.5rem;
+    z-index: 1000; }
   .navigation__nav {
     height: 100vh;
     position: fixed;
@@ -34,10 +32,9 @@
     width: 0;
     transition: all 0.8s; }
   .navigation__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
     list-style: none;
     text-align: center;
     width: 100%; }
@@ -52,7 +49,7 @@
     text-decoration: none;
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-    background-size: 220%;
+    background-size: 250%;
     transition: all .4s; }
     .navigation__link:link span, .navigation__link:visited span {
       margin-right: 1rem;
@@ -98,6 +95,9 @@
   @media (max-width: 75em) {
     .navigation {
       visibility: visible; } }
+
+nav {
+  background-color: #363636 !important; }
 
 .row {
   max-width: 114rem;
@@ -304,6 +304,7 @@ body {
     font-size: 8rem;
     font-weight: 800;
     letter-spacing: 2rem;
+    line-height: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -314,33 +315,28 @@ body {
       @media (max-width: 56.25em) {
         .heading-primary--main--contact-us {
           font-size: 2.5rem !important; } }
-    @media (max-width: 56.25em) {
-      .heading-primary--main {
-        font-size: 6rem;
-        letter-spacing: .5rem; } }
     @media (max-width: 75em) {
       .heading-primary--main {
-        font-size: 4rem;
-        letter-spacing: .5rem; } }
+        font-size: 6rem;
+        letter-spacing: .5rem;
+        line-height: 1; } }
   .heading-primary--main-1 {
     padding-top: 20rem;
     display: block;
     font-size: 12rem;
     font-weight: 800;
     letter-spacing: 2rem;
+    line-height: 1;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     /* animation-delay: 1s; */
     /* animation-iteration-count: 3; */ }
-    @media (max-width: 56.25em) {
-      .heading-primary--main-1 {
-        font-size: 6rem;
-        letter-spacing: .5rem; } }
     @media (max-width: 75em) {
       .heading-primary--main-1 {
-        font-size: 4rem;
-        letter-spacing: .5rem; } }
+        font-size: 6rem;
+        letter-spacing: .5rem;
+        line-height: 1; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -953,7 +949,9 @@ h1 {
 .navbarx {
   height: 0;
   position: relative;
-  background-color: #fff; }
+  background-color: #fff;
+  max-width: 120rem;
+  margin: auto; }
   .navbarx__logo-box {
     position: absolute;
     top: 4rem;
@@ -979,7 +977,7 @@ h1 {
         margin: 2rem 0;
         font-size: rem; } }
   .navbarx__item {
-    padding: 0 2rem; }
+    padding: 0; }
     @media (max-width: 75em) {
       .navbarx__item {
         font-size: 5rem; } }

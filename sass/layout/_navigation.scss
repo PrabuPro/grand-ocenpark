@@ -10,8 +10,8 @@
         height: 7rem;
         width: 7rem;
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 5rem;
+        right: 5rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -21,15 +21,15 @@
     }
 
     &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
-        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        top: 5.5rem;
+        right: 5.5rem;
+        // background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
-        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        // transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         // transform: scale(80);
     }
 
@@ -48,10 +48,9 @@
     }
 
     &__list{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        margin-top: 20rem;
         list-style: none;
         text-align: center;
         width: 100%;
@@ -73,7 +72,7 @@
             text-decoration: none;
             text-transform: uppercase;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 220%;
+            background-size: 250%;
             transition: all .4s;  
 
             span{
@@ -155,4 +154,7 @@
     }
 
     
+}
+nav {
+    background-color: $color-primary !important;
 }
