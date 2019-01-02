@@ -27,7 +27,10 @@ body {
         animation-timing-function: ease-out;
 
         &--reservation{
-            font-size: 4rem !important;
+            
+            @include respond(tab-port) {
+                font-size: 4rem !important;
+            }
         }
 
         &--contact-us{
