@@ -52,6 +52,24 @@
         }
     }
 
+    &__social {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        &--icon {
+            margin: 0 1rem;
+            fill: $color-white;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &--link {
+            cursor: pointer;
+        }
+    }
+
     &__link {
         &:link,
         &:visited{

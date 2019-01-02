@@ -258,6 +258,18 @@ nav {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
+  .footer__social {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .footer__social--icon {
+      margin: 0 1rem;
+      fill: #fff;
+      width: 2rem;
+      height: 2rem; }
+    .footer__social--link {
+      cursor: pointer; }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
