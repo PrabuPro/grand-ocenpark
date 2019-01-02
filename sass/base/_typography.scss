@@ -26,11 +26,15 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
+        &--reservation{
+            font-size: 4rem !important;
+        }
+
         &--contact-us{
             font-size: 7rem;
             
             @include respond(tab-port) {
-                font-size: 2.5rem !important;
+                font-size: 6rem !important;
             }
         }
 

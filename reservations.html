@@ -16,104 +16,124 @@
 
 <body>
 
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <ul class="navbarx__list">
-                    <li class="navbarx__item"><a href="/index.html" class="navbarx__link">Home</a></li>
-                    <li class="navbarx__item"><a href="/about-us.html" class="navbarx__link">About Us</a></li>
-                    <li class="navbarx__item"><a href="/reservations.html" class="navbarx__link">Reservation</a></li>
-                    <li class="navbarx__item"><a href="#" class="navbarx__link">Contact Us</a></li>
-                </ul>
-            </ul>
-        </nav>
-    </div>
-
-    <nav class="navbarx">
-        <div class="row">
-            <div class="navbarx__logo-box">
-                <img src="img/logo2.jpg" alt="Logo" class="navbarx__logo">
-            </div>
-            <ul class="navbarx__list">
-                <li class="navbarx__item"><a href="/index.html" class="navbarx__link">Home</a></li>
-                <li class="navbarx__item"><a href="/about-us.html" class="navbarx__link">About Us</a></li>
-                <li class="navbarx__item"><a href="/reservations.html" class="navbarx__link">Reservation</a></li>
-                <li class="navbarx__item"><a href="#" class="navbarx__link">Contact Us</a></li>
-            </ul>
+<div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="/index.html" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="/about-us.html" class="navigation__link">About Us</a></li>
+            <li class="navigation__item"><a href="/reservations.html" class="navigation__link">Reservation</a></li>
+            <li class="navigation__item"><a href="/contact-us.html" class="navigation__link">Contact Us</a></li>
+        </ul>
+        <hr width="60%" style="margin: 5px auto 5px auto;">
+        <p class="navigation__submenu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            blanditiis.</p>
+        <p class="navigation__submenu--follow" style="margin-top:5px;">Follow us on</p>
+        <div class="navigation__social">
+            <svg class="navigation__social--icon">
+                <a href="#" class="navigation__social--link">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </a>
+            </svg>
+            <svg class="navigation__social--icon">
+                <a href="#" class="navigation__social--link">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </a>
+            </svg>
+            <svg class="navigation__social--icon">
+                <a href="#" class="navigation__social--link">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </a>
+            </svg>
         </div>
+
     </nav>
+</div>
+
+<nav class="navbarx">
+    <div class="row">
+        <div class="navbarx__logo-box">
+            <img src="img/logo2.jpg" alt="Logo" class="navbarx__logo">
+        </div>
+        <ul class="navbarx__list">
+            <li class="navbarx__item"><a href="/index.html" class="navbarx__link">Home</a></li>
+            <li class="navbarx__item"><a href="/about-us.html" class="navbarx__link">About Us</a></li>
+            <li class="navbarx__item"><a href="/reservations.html" class="navbarx__link">Reservation</a></li>
+            <li class="navbarx__item"><a href="/contact-us.html" class="navbarx__link">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
 
     <header class="header-aboutus">
         <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary--main">Reservations</span>
+                <span class="heading-primary--main heading-primary--main--reservation">Reservations</span>
             </h1>
         </div>
     </header>
 
     <main>
-       
-<div class="section-reservation">
-    <div class="row">
-        <div class="book-table__box-2">
-            <h1 class="book-table__title">Book a Table</h1>
-            <div class="book-table__form-2">
-                <form action="#" class="form-2">
-                    <div class="form-rows">
-                        <div class="input-field">
-                            <input id="beginDate" type="text" class="datepicker">
-                            <label for="beginDate" class="book-table__label">Date</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="name" type="text">
-                            <label for="name" class="book-table__label">Name</label>
-                        </div>
-                    </div>
-                    <div class="form-rows">
-                        <div class="input-field">
-                            <input id="time" type="text" class="timepicker">
-                            <label for="time" class="book-table__label">Time</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="name" type="text">
-                            <label for="name" class="book-table__label">Phone</label>
-                        </div>
-                    </div>
-                    <div class="form-rows">
-                        <div class="input-field">
-                            <select>
-                                <option value="" disabled selected class="book-table__label">People</option>
-                                <option value="1">1 Person</option>
-                                <option value="2">2 People</option>
-                                <option value="3">3 People</option>
-                                <option value="4">4 People</option>
-                                <option value="5">5 People</option>
-                                <option value="6">6 People</option>
-                                <option value="7">7 People</option>
-                                <option value="8">8 People</option>
-                            </select>
-                            <!-- <label>People</label> -->
-                        </div>
-                        <div class="input-field">
-                            <input id="emai" type="email">
-                            <label for="emai" class="book-table__label">Email</label>
-                        </div>
-                    </div>
 
-                    <div class="from__group book-table__button-2">
-                        <button class="btnx btnx-green ">
-                            Book now &rarr;
-                        </button>
+        <div class="section-reservation">
+            <div class="row">
+                <div class="book-table__box-2">
+                    <h1 class="book-table__title">Book a Table</h1>
+                    <div class="book-table__form-2">
+                        <form action="#" class="form-2">
+                            <div class="form-rows">
+                                <div class="input-field">
+                                    <input id="beginDate" type="text" class="datepicker">
+                                    <label for="beginDate" class="book-table__label">Date</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="name" type="text">
+                                    <label for="name" class="book-table__label">Name</label>
+                                </div>
+                            </div>
+                            <div class="form-rows">
+                                <div class="input-field">
+                                    <input id="time" type="text" class="timepicker">
+                                    <label for="time" class="book-table__label">Time</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="name" type="text">
+                                    <label for="name" class="book-table__label">Phone</label>
+                                </div>
+                            </div>
+                            <div class="form-rows">
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" disabled selected class="book-table__label">People</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8">8 People</option>
+                                    </select>
+                                    <!-- <label>People</label> -->
+                                </div>
+                                <div class="input-field">
+                                    <input id="emai" type="email">
+                                    <label for="emai" class="book-table__label">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="from__group book-table__button-2">
+                                <button class="btnx btnx-green ">
+                                    Book now &rarr;
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-</div>
         </div>
 
 
@@ -152,20 +172,20 @@
     <script src="js/materialize.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-    const calander = document.querySelector('.datepicker');
-    M.Datepicker.init(calander, {
-        format: 'dd-mm-yy'
-    });
+    <script>
+        const calander = document.querySelector('.datepicker');
+        M.Datepicker.init(calander, {
+            format: 'dd-mm-yy'
+        });
 
-    const time = document.querySelector('.timepicker');
-    M.Timepicker.init(time, {});
+        const time = document.querySelector('.timepicker');
+        M.Timepicker.init(time, {});
 
-    const select = document.querySelector('select');
-    M.FormSelect.init(select, {});
+        const select = document.querySelector('select');
+        M.FormSelect.init(select, {});
 
-    AOS.init();
-</script>
+        AOS.init();
+    </script>
 
 </body>
 
