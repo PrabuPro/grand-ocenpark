@@ -7,20 +7,20 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 5rem;
-    right: 5rem;
+    top: 4.5rem;
+    right: 4.5rem;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer; }
   .navigation__background {
-    height: 5rem;
-    width: 5rem;
+    height: 4.5rem;
+    width: 4.5rem;
     border-radius: 50%;
     position: fixed;
-    top: 5.5rem;
-    right: 5.5rem;
+    top: 5rem;
+    right: 5rem;
     z-index: 1000; }
   .navigation__nav {
     height: 100vh;
