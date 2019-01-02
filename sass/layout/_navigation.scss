@@ -50,7 +50,7 @@
     &__list{
         display: flex;
         flex-direction: column;
-        margin-top: 20rem;
+        margin-top: 10rem;
         list-style: none;
         text-align: center;
         width: 100%;
@@ -59,6 +59,42 @@
     &__item{
         margin: 1rem;
 
+    }
+
+    &__submenu{
+        margin-top: 2rem;
+        color: #d5d5d5 !important;
+        font-style: italic;
+        text-align: center;
+        line-height: 1;
+        color: $color-white;
+        
+        &--follow{
+            font-family: inherit;
+            color: #9c9c9c;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+
+    &__social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+        &--icon{
+            margin: 0 2rem;
+            fill: $color-white;
+            width: 4rem;
+            height: 4rem;
+
+
+        }
+
+        &--link{
+            cursor: pointer;
+        }
     }
 
     &__link{

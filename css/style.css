@@ -34,12 +34,36 @@
   .navigation__list {
     display: flex;
     flex-direction: column;
-    margin-top: 20rem;
+    margin-top: 10rem;
     list-style: none;
     text-align: center;
     width: 100%; }
   .navigation__item {
     margin: 1rem; }
+  .navigation__submenu {
+    margin-top: 2rem;
+    color: #d5d5d5 !important;
+    font-style: italic;
+    text-align: center;
+    line-height: 1;
+    color: #fff; }
+    .navigation__submenu--follow {
+      font-family: inherit;
+      color: #9c9c9c;
+      text-align: center;
+      font-weight: 500; }
+  .navigation__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; }
+    .navigation__social--icon {
+      margin: 0 2rem;
+      fill: #fff;
+      width: 4rem;
+      height: 4rem; }
+    .navigation__social--link {
+      cursor: pointer; }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     font-size: 3rem;
