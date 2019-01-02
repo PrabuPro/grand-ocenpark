@@ -228,9 +228,15 @@ nav {
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__log {
     width: 15rem;
     height: auto; }
@@ -238,8 +244,16 @@ nav {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
+    @media (max-width: 75em) {
+      .footer__list {
+        align-self: center;
+        margin: 0 auto; } }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
@@ -261,6 +275,10 @@ nav {
     padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 @keyframes moveInLeft {
   0% {
