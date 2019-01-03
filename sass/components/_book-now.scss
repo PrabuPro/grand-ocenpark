@@ -1,0 +1,45 @@
+.book-now-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     z-index: 9800;
+    height: 9rem;
+    width: 9rem;
+    position:fixed;
+    bottom:3rem;
+    right:3rem;
+    padding:10px 20px;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 100;
+    font-size:2rem;
+    background-color:rgba(#DB4E42, .8);
+    line-height: 1;
+    color:#fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius:50%;
+    animation: booknow 1s infinite;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
+
+    
+
+    &:hover{
+        background-color: #DB4E42;
+    }
+
+    @keyframes booknow {
+        0%{
+            transform: scale(1);
+            
+        }
+        50%{
+            transform: scale(1.2);
+            
+        }
+        100%{
+            transform: scale(1);
+            
+        }
+
+    }
+}
