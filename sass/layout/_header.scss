@@ -1,7 +1,7 @@
 .header {
     z-index: -999;
     height: 100vh;
-      background-image: linear-gradient(to right bottom,
+    background-image: linear-gradient(to right bottom,
                         rgba($color-primary-light, 0.5),
                         rgba($color-primary-dark, 0.5)),
                         url(../img/beach-garden.jpg);
@@ -26,6 +26,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+
+    &__weddings{
+        height: 65vh;
+        background-image: linear-gradient(to right bottom,
+                        rgba($color-primary-light, 0.5),
+                        rgba($color-primary-dark, 0.5)),
+                        url(../img/party.jpg) !important;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 

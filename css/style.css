@@ -196,6 +196,12 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  .header__weddings {
+    height: 65vh;
+    background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/party.jpg) !important;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .header-aboutus {
   z-index: -999;
@@ -353,7 +359,7 @@ body {
     font-size: 8rem;
     font-weight: 800;
     letter-spacing: 2rem;
-    line-height: 1rem;
+    line-height: 1;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -454,6 +460,113 @@ body {
 
 .u-margin-auto {
   margin: 0 auto !important; }
+
+.wedding {
+  /* Media Queries */ }
+  .wedding__wrapper {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .wedding__parent {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative; }
+  .wedding__child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .3s ease-out; }
+  .wedding__bg-one {
+    background-image: url(../img/balloon1.jpeg);
+    transition: all .5s ease-out; }
+  .wedding__bg-two {
+    background-image: url(../img/birthdaycake.jpg); }
+  .wedding__bg-three {
+    background-image: url(../img/balloon2.jpg); }
+  .wedding__bg-four {
+    background-image: url(/img/party2.jpeg); }
+  .wedding__bg-five {
+    background-image: url(http://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/1453920892/DUBAI-554088081-ABOVE0116.jpg?itok=dcoZnCrc); }
+  .wedding__bg-six {
+    background-image: url(http://blog.whitepages.com/wp-content/uploads/2015/04/san-franc.jpg); }
+  .wedding__overlay {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .3s; }
+  .wedding__overlay2 {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .3s; }
+  .wedding__title {
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer; }
+  .wedding__title2 {
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0; }
+  .wedding__parent:hover .wedding__child,
+  .wedding__parent:focus .wedding__child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
+  .wedding__overlay:hover {
+    opacity: 0; }
+  .wedding__overlay2:hover {
+    opacity: 1; }
+  .wedding__overlay:hover > .wedding__title2 {
+    opacity: 1 !important; }
+  .wedding__parent:hover .wedding__child:before,
+  .wedding__parent:focus .wedding__child:before {
+    display: block; }
+  .wedding__parent:hover a,
+  .wedding__parent:focus a {
+    display: block; }
+  .wedding__child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  @media screen and (max-width: 960px) {
+    .wedding__parent {
+      width: 100%;
+      margin: 20px 0px; }
+    .wedding__wrapper {
+      padding: 20px 20px; } }
 
 .book-now-btn {
   display: flex;

@@ -1,0 +1,158 @@
+.wedding{
+
+    &__wrapper{
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__parent {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+    
+    }
+
+    &__child{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .3s ease-out;
+    }
+
+    &__bg-one {
+        background-image: url(../img/balloon1.jpeg);
+        transition: all .5s ease-out;
+    }
+    
+    &__bg-two {
+        background-image: url(../img/birthdaycake.jpg);
+    }
+    
+    &__bg-three {
+        background-image: url(../img/balloon2.jpg);
+    }
+    
+    &__bg-four {
+        background-image: url(/img/party2.jpeg);
+    }
+    
+    &__bg-five {
+        background-image: url(http://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/1453920892/DUBAI-554088081-ABOVE0116.jpg?itok=dcoZnCrc);
+    }
+    
+    &__bg-six {
+        background-image: url(http://blog.whitepages.com/wp-content/uploads/2015/04/san-franc.jpg);
+    }
+
+    &__overlay{
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color-black, .5);
+        transition: all .3s
+    }
+
+    &__overlay2{
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color-black, .5);
+        transition: all .3s
+    }
+
+    &__title{
+        font-size: 35px;
+        color: #ffffff !important;
+        font-family: sans-serif;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    &__title2{
+        font-size: 35px;
+        color: #ffffff !important;
+        font-family: sans-serif;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    &__parent:hover &__child, 
+    &__parent:focus &__child {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    &__overlay:hover{
+        opacity: 0;
+    }
+
+    &__overlay2:hover{
+        opacity: 1;
+    }
+
+    &__overlay:hover > &__title2{
+        opacity: 1 !important;
+    }
+
+
+    &__parent:hover &__child:before,
+    &__parent:focus &__child:before {
+        display: block;
+    }
+
+    &__parent:hover a,
+    &__parent:focus a {
+        display: block;
+    }
+
+    &__child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 960px) {
+        &__parent {
+            width: 100%;
+            margin: 20px 0px
+        }
+
+        &__wrapper {
+            padding: 20px 20px;
+        }
+
+}
+
+
+
+}
