@@ -1194,13 +1194,13 @@ h1 {
   position: fixed;
   background-color: #363636;
   max-width: 100% !important;
-  height: 8rem !important;
+  height: 6.5rem !important;
   margin: auto !important;
-  z-index: 10000 !important;
+  z-index: 9998 !important;
   transition: all .5s; }
   .navbary .logo-box {
     position: absolute;
-    top: 1rem;
+    top: 0rem;
     left: 14rem;
     transition: all .5s; }
     @media (max-width: 75em) {
@@ -1212,7 +1212,7 @@ h1 {
   .navbary .list {
     display: flex;
     position: absolute;
-    top: 1rem;
+    top: 0rem;
     right: 14rem;
     list-style: none;
     transition: all .5s; }
@@ -1239,8 +1239,9 @@ h1 {
       color: #fff;
       text-transform: uppercase; }
     .navbary .navlink:hover, .navbary .navlink:active {
-      color: #99C6AE;
-      font-weight: 500; }
+      color: #363636;
+      font-weight: 500;
+      background-color: #fff; }
   @media (max-width: 75em) {
     .navbary {
       visibility: hidden; } }

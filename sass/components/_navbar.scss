@@ -84,15 +84,15 @@
     position: fixed;
     background-color: $color-primary;
     max-width: 100% !important;
-    height: 8rem !important;
+    height: 6.5rem !important;
     margin: auto !important;
-    z-index: 10000 !important;
+    z-index: 9998 !important;
     transition: all .5s;
     
 
     .logo-box{
         position: absolute;
-        top: 1rem;
+        top: 0rem;
         left: 14rem;
         transition: all .5s;
          @include respond(tab-land) {
@@ -109,7 +109,7 @@
     .list{
         display: flex;
         position: absolute;
-        top: 1rem;
+        top: 0rem;
         right:14rem;
         list-style: none;
         transition: all .5s;
@@ -144,8 +144,9 @@
 
         &:hover,
         &:active {
-            color: $color-secondary-light;
+            color: $color-primary;
             font-weight: 500;
+            background-color: #fff;
             
         }
     }
