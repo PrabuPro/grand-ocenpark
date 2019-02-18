@@ -13,6 +13,7 @@
     }
 
     &__text{
+        margin-top: 4rem;
         font-family: 'Luckiest Guy',cursive;
         margin-left: 6rem;
         flex: 0 0 18%;
@@ -31,6 +32,7 @@
     }
     
     &__para{
+        margin-top: 4rem;
         flex: 1 0 50%;
         font-size: 1.5rem;
         color: $color-white;
@@ -48,6 +50,7 @@
     }
 
     &__button{
+        margin-top: 4rem;
         flex: 0 0 18%;
         align-self: center;
         // margin-right: 6rem;

@@ -179,7 +179,7 @@ nav {
 .header {
   z-index: -999;
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/beach-garden.jpg);
+  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/bg_1.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -669,6 +669,7 @@ body {
       flex-direction: column;
       height: 30rem; } }
   .happy-hour__text {
+    margin-top: 4rem;
     font-family: 'Luckiest Guy',cursive;
     margin-left: 6rem;
     flex: 0 0 18%;
@@ -684,6 +685,7 @@ body {
         padding-top: 2rem;
         margin-left: 0; } }
   .happy-hour__para {
+    margin-top: 4rem;
     flex: 1 0 50%;
     font-size: 1.5rem;
     color: #fff;
@@ -696,6 +698,7 @@ body {
         justify-content: center;
         margin-top: -3rem; } }
   .happy-hour__button {
+    margin-top: 4rem;
     flex: 0 0 18%;
     align-self: center; }
     @media (max-width: 75em) {
@@ -821,13 +824,13 @@ body {
 
 .book-table {
   height: 60rem;
-  background-image: linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0.9) 0%, transparent 50%), url(../img/restaurent.jpg);
+  background-image: linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0.9) 0%, transparent 50%), url(../img/bg_5.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative; }
   @media (max-width: 75em) {
     .book-table {
-      background-image: linear-gradient(90deg, white 60%, rgba(255, 255, 255, 0.9) 0%, transparent 50%), url(../img/restaurent.jpg); } }
+      background-image: linear-gradient(90deg, white 60%, rgba(255, 255, 255, 0.9) 0%, transparent 50%), url(../img/bg_5.jpg); } }
   @media (max-width: 56.25em) {
     .book-table {
       background-image: none;
@@ -1716,7 +1719,7 @@ h1 {
   transform: translateY(0); }
 
 .section-discover {
-  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.3), rgba(41, 41, 41, 0.3)), url(../img/restaurent-3.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(../img/bg_3.jpg);
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 10rem;
@@ -1733,7 +1736,7 @@ h1 {
 .section-img {
   height: 40rem;
   background-image: url(../img/banner.jpeg);
-  background-size: cover; }
+  background-size: contain; }
 
 .section-parallax .parallax-container {
   height: 60rem; }

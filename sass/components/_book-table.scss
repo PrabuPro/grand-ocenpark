@@ -5,9 +5,9 @@
                     rgba($color-white, 1) 50%,
                     rgba($color-white, .9) 0%,
                     transparent 50%),
-                    url(../img/restaurent.jpg);
+                    url(../img/bg_5.jpg);
     background-size: cover;
-     background-position: top;
+     background-position: center;
     // border-radius: 3px;
     // box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
     position: relative;
@@ -17,7 +17,7 @@
                         rgba($color-white, 1) 60%,
                         rgba($color-white, .9) 0%,
                         transparent 50%),
-                        url(../img/restaurent.jpg);
+                        url(../img/bg_5.jpg);
      }
      @include respond(tab-port) {
         background-image: none;

@@ -1,8 +1,8 @@
 .section-discover{
     background-image: linear-gradient(to right bottom,
-          rgba($color-primary-light, 0.3),
-          rgba($color-primary-dark, 0.3)),
-          url(../img/restaurent-3.jpeg);
+          rgba($color-primary, 0.6),
+          rgba($color-primary, 0.6)),
+          url(../img/bg_3.jpg);
     background-size: cover;
     padding-top: 5rem;
     padding-bottom: 10rem;
@@ -24,7 +24,7 @@
 .section-img{
     height: 40rem;
     background-image: url(../img/banner.jpeg);
-    background-size: cover;
+    background-size: contain;
 }
 
 .section-parallax{
