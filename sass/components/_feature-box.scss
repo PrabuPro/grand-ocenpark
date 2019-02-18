@@ -1,15 +1,22 @@
 .feature-box{
+    height: 40rem;
+    width: 100%;
     background-color: rgba($color-gray-light-1, .8);
     font-size: 1.5rem;
     padding: 2.5rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     transition: all .2s;
 
     @include respond(tab-land){
         margin: 3rem;
     }
+
+    
 
     &__icon {
         font-size: 6rem;
@@ -21,6 +28,9 @@
     }
 
     &__img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 8rem;
         height: 8rem;
         margin-bottom: .5rem;
         display: inline-block;
@@ -31,5 +41,11 @@
         color: $color-primary-dark;
     }
 
+    }
 
+    .feature-box__section {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: 100%;
     }
