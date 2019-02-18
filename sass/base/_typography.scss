@@ -58,11 +58,13 @@ body {
 
     }
     &--main-1 {
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        text-transform: capitalize;
         padding-top: 20rem;
         display: block;
-        font-size: 12rem;
-        font-weight: 800;
-        letter-spacing: 2rem;
+        font-size: 6.5rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
         line-height: 1;
 
         animation-name: moveInLeft;
@@ -76,6 +78,12 @@ body {
         //     font-size: 6rem;
         //     letter-spacing: .5rem;
         // }
+
+        &-2{
+            font-size: 8rem;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
         
         @include respond(tab-land){
             font-size: 6rem;

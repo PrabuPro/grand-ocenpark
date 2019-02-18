@@ -24,6 +24,27 @@
         background-color: $color-white;
      }
 
+     &__msg{
+        &--red{
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: .5rem 2rem;
+            background-color: rgba(#e74c3c, .5);
+            color: rgb(116, 1, 1);
+        }
+        
+        &--green{
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: .5rem 2rem;
+            background-color: rgba(#1DD3B0, .5);
+            color: #086375;
+        }
+
+     }
+
      &__label{
         font-size: 1.45rem !important;
         color: $color-black !important;

@@ -1,12 +1,22 @@
 .intro-box{
     padding: 0;
-    margin: 8rem 4rem;
+    margin: 8rem 4rem 8rem 4rem;
+
     &__title{
         color: $color-black;
-        font-size: 4rem;
-        text-transform: uppercase;
-        letter-spacing: .4rem;
+        text-transform: capitalize;
+        font-size: 3rem;
+        letter-spacing: .2rem;
         font-weight: 600;
+        margin-bottom: 3rem;
+        line-height: 1.1;
+
+        &-1{
+            font-size: 7rem;
+            text-transform: capitalize;
+            font-weight: 800;
+            text-align: center !important;
+        }
     }
     
     &__para{
@@ -24,5 +34,48 @@
         @include respond(tab-land){
             display: none;
         }
+    }
+
+   
+
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5rem 0rem 5rem 4rem;
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        margin-top: 1rem ;
+        margin-bottom: 1rem; 
+        transition: all .4s;
+        width: 14rem;
+        height: auto;
+
+        &:not(:nth-child(4n)){
+            margin-right: 3.5rem;
+        }
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+    }
+
+    &__icon {
+        width: 10rem;
+    }
+
+    &__text{
+        color: $color-primary;
+        font-weight: 800;
+        font-size: 2rem;
+        text-align: center;
     }
 }
