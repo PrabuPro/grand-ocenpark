@@ -207,9 +207,9 @@ nav {
 .header-aboutus {
   z-index: -999;
   height: 65vh;
-  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/beach-garden.jpg);
+  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/bg_6.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
   top: 0; }
   .header-aboutus__logo-box {
@@ -1419,7 +1419,6 @@ h1 {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15;
   overflow: hidden; }
   .bg-video__content {
     width: 100%;
@@ -1461,6 +1460,7 @@ h1 {
     backface-visibility: hidden;
     transition: all .5s; }
   .story__text {
+    color: #000;
     transform: skewX(12deg); }
     @media (max-width: 75em) {
       .story__text {

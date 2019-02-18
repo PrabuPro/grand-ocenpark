@@ -41,6 +41,7 @@
     }
 
     &__text {
+        color: $color-black;
         transform: skewX(12deg);
         @include respond(tab-land) {
             transform: skewX(0deg) !important;
