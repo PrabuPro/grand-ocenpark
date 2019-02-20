@@ -1051,11 +1051,7 @@ body {
       display: none; } }
 
 .section {
-  display: none;
-  padding: 2rem; }
-  @media screen and (min-width: 768px) {
-    .section {
-      padding: 4rem; } }
+  display: none; }
   @supports (display: grid) {
     .section {
       display: block; } }
