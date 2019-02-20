@@ -13,7 +13,7 @@
     transition: all .2s;
 
     @include respond(tab-land){
-        margin: 3rem;
+        margin-bottom: 3rem;
     }
 
 
@@ -47,4 +47,8 @@
         flex-direction: row;
         align-items: stretch;
         height: 100%;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
     }

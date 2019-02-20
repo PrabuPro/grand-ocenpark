@@ -8,6 +8,7 @@
     width: 100%;
 
     @include respond(tab-land){
+        display: none;
         flex-direction: column;
         height: 30rem;
     }
@@ -23,6 +24,7 @@
         // font-weight: 200;
         @include respond(tab-land) {
             font-size: 5.5rem; 
+            flex: 0 0 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -41,6 +43,7 @@
         // padding: 0 6rem;
         @include respond(tab-land) {
             display: flex;
+            flex: 0 0 100%;
             align-items: center;
             justify-content: center;
             margin-top: -3rem;
@@ -56,6 +59,7 @@
         // margin-right: 6rem;
         @include respond(tab-land) {
             display: flex;
+            flex: 0 0 100%;
             align-items: center;
             justify-content: center;
             padding-bottom: 2rem;

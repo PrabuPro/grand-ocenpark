@@ -46,6 +46,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 8rem 0rem 8rem 5rem;
+    
+    @include respond(tab-land) {
+        padding: 0rem 5.5rem 5.5rem 5.5rem;
+    }
 
     &__item{
         display: flex;
