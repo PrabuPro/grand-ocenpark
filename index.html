@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <!-- Compiled and minified CSS -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -225,14 +226,18 @@
                         <section class="section">
                             <div class="grid">
                                 <div class="item">
-                                    <div class="item__details">
-                                        jelly-o brownie sweet
-                                    </div>
+                                    <a href="img/bg_1.jpg" data-lightbox="roadtrip">
+                                        <div class="item__details">
+                                            jelly-o brownie sweet
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="item item--large">
+                                    <a href="img/bg_1.jpg" data-lightbox="roadtrip">
                                     <div class="item__details">
                                         Muffin jelly gingerbread
                                     </div>
+                                    </a>
                                 </div>
                                 <div class="item item--medium">
                                     <div class="item__details">
@@ -535,6 +540,7 @@
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/lightbox.js"></script>
 
         <script>
             $(function () {
@@ -568,6 +574,11 @@
                         } else{
                             $('.navbartoggle').removeClass('navbary');
                         }
+                    });
+
+                      lightbox.option({
+                    'resizeDuration': 200,
+                    'wrapAround': true
                     });
 
                     // $(window).on('scroll', function () {
