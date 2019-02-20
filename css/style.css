@@ -179,7 +179,7 @@ nav {
 .header {
   z-index: -999;
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/bg_1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.2), rgba(41, 41, 41, 0.2)), url(../img/bg_1.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -380,7 +380,7 @@ body {
         letter-spacing: .5rem;
         line-height: 1; } }
   .heading-primary--main-1 {
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8);
     text-transform: capitalize;
     padding-top: 20rem;
     display: block;
@@ -1088,29 +1088,29 @@ h1 {
   .item__image-1 {
     background-image: url(../img/gallery-7-sm.jpg); }
   .item__image-2 {
-    background-image: url(../img/gallery-13-max.jpg); }
+    background-image: url(../img/gallery-10-max.jpg); }
   .item__image-3 {
-    background-image: url(../img/gallery-1-sm.jpg); }
+    background-image: url(../img/gallery-21-sm.jpg); }
   .item__image-4 {
-    background-image: url(../img/gallery-16-sm.jpg); }
+    background-image: url(../img/gallery-19-max.jpg); }
   .item__image-5 {
     background-image: url(../img/gallery-8-max.jpg); }
   .item__image-6 {
-    background-image: url(../img/gallery-17-sm.jpg); }
+    background-image: url(../img/gallery-20-sm.jpg); }
   .item__image-7 {
-    background-image: url(../img/gallery-19-max.jpg); }
+    background-image: url(../img/gallery-16-max.jpg); }
   .item__image-8 {
     background-image: url(../img/gallery-15-sm.jpg); }
   .item__image-9 {
-    background-image: url(../img/gallery-21-sm.jpg); }
+    background-image: url(../img/gallery-1-sm.jpg); }
   .item__image-10 {
-    background-image: url(../img/gallery-10-max.jpg); }
+    background-image: url(../img/gallery-13-max.jpg); }
   .item__image-11 {
     background-image: url(../img/gallery-6-sm.jpg); }
   .item__image-12 {
     background-image: url(../img/gallery-18-sm.jpg); }
   .item__image-13 {
-    background-image: url(../img/gallery-20-sm.jpg); }
+    background-image: url(../img/gallery-17-sm.jpg); }
   .item__image-14 {
     background-image: url(../img/gallery-11-max.jpg); }
   .item__image-15 {
@@ -1122,8 +1122,6 @@ h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.3;
     transition: opacity 0.3s ease-in-out; }
   @media screen and (max-width: 768px) {
     .item:after {
