@@ -500,10 +500,11 @@ body {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   margin: 10rem 15rem 10rem 10rem;
-  background-color: #F3B431;
+  background-color: #BA2F16;
   padding: 3.5rem;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
-  animation: shake 1s infinite; }
+  animation: shake 1s infinite;
+  cursor: pointer; }
   .offers:hover {
     animation-play-state: paused; }
   @media (max-width: 75em) {
@@ -514,7 +515,7 @@ body {
     .offers {
       margin: 0; } }
   .offers__title {
-    color: #363636;
+    color: #fff;
     font-size: 5.5rem;
     font-weight: 700;
     columns: #000;
@@ -523,7 +524,7 @@ body {
   .offers__para {
     font-size: 1.5rem;
     font-weight: 400;
-    columns: #fff;
+    columns: #fff !important;
     margin-bottom: 1rem; }
 
 .wedding {
@@ -636,7 +637,7 @@ body {
   font-family: 'Luckiest Guy', cursive;
   font-weight: 100;
   font-size: 1.8rem;
-  background-color: rgba(219, 78, 66, 0.8);
+  background-color: rgba(186, 47, 22, 0.8);
   line-height: 1;
   color: #fff;
   -webkit-border-radius: 50%;
@@ -646,7 +647,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
   transition: all .2s; }
   .book-now-btn:hover {
-    background-color: #DB4E42;
+    background-color: #BA2F16;
     animation-play-state: paused; }
 
 @keyframes booknow {
@@ -1843,7 +1844,7 @@ h1 {
   justify-content: flex-end;
   height: 100vh;
   width: 100;
-  background-image: linear-gradient(to left bottom, rgba(250, 208, 46, 0.15), rgba(250, 208, 46, 0.15)), url(../img/offer.jpg);
+  background-image: linear-gradient(to left bottom, rgba(250, 208, 46, 0.1), rgba(250, 208, 46, 0.1)), url(../img/offer.jpg);
   background-size: cover; }
   @media (max-width: 75em) {
     .section-offer {

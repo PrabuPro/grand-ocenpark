@@ -5,10 +5,12 @@
     -webkit-border-radius: 10px;
     border-radius: 10px;
      margin: 10rem 15rem 10rem 10rem; 
-     background-color: #F3B431;
+     background-color: #BA2F16;
      padding: 3.5rem;
      box-shadow: .5rem 1rem 2rem rgba($color-black,.5);
      animation: shake 1s infinite;
+     cursor: pointer;
+     
 
      &:hover {
          animation-play-state: paused;
@@ -25,7 +27,7 @@
      }
 
      &__title {
-         color: $color-primary;
+         color: $color-white;
          font-size: 5.5rem;
          font-weight: 700;
          columns: $color-black;
@@ -36,7 +38,7 @@
      &__para {
          font-size: 1.5rem;
          font-weight: 400;
-         columns: $color-white;
+         columns: $color-white !important;
          margin-bottom: 1rem;
      }
 
