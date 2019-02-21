@@ -41,6 +41,26 @@
             rgba($color-primary-dark, 0.3)),
             url(../img/coffee.jpeg);
     background-size: cover;
+    
+
+     @include respond(tab-land) {
+        display: flex;
+        align-items: flex-end;
+     }
+}
+
+.section-offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100;
+    background-image: linear-gradient(to left bottom, 
+                        rgba(#FAD02E,.15),
+                        rgba(#FAD02E, .15)),
+                        url(../img/offer.jpg);
+    background-size: cover;
+    
 
      @include respond(tab-land) {
         display: flex;
