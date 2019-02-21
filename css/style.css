@@ -346,6 +346,14 @@ nav {
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
 
+@keyframes booknow {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -649,14 +657,6 @@ body {
   .book-now-btn:hover {
     background-color: #BA2F16;
     animation-play-state: paused; }
-
-@keyframes booknow {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.2); }
-  100% {
-    transform: scale(1); } }
 
 .contact-us {
   display: flex;
