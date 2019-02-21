@@ -207,7 +207,7 @@ nav {
 .header-aboutus {
   z-index: -999;
   height: 65vh;
-  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.5), rgba(41, 41, 41, 0.5)), url(../img/bg_6.jpg);
+  background-image: linear-gradient(to right bottom, rgba(77, 79, 84, 0.2), rgba(41, 41, 41, 0.2)), url(../img/bg_4.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -361,6 +361,7 @@ body {
     font-weight: 800;
     letter-spacing: 2rem;
     line-height: 1;
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8);
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -577,7 +578,7 @@ body {
   padding: 10px 20px;
   font-family: 'Luckiest Guy', cursive;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: rgba(219, 78, 66, 0.8);
   line-height: 1;
   color: #fff;
@@ -1179,10 +1180,10 @@ h1 {
     color: #000;
     text-align: justify; }
   .intro-box__img {
-    background-image: url(../img/intro.jpeg);
+    background-image: url(../img/gallery-3-sm.jpg);
     background-size: cover;
     height: 40rem;
-    max-width: 40rem;
+    max-width: 60rem;
     margin: auto; }
     @media (max-width: 75em) {
       .intro-box__img {

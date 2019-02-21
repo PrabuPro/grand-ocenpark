@@ -21,6 +21,8 @@ body {
         font-weight: 800;
         letter-spacing: 2rem;
         line-height: 1;
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .8);
+
 
         animation-name: moveInLeft;
         animation-duration: 1s;

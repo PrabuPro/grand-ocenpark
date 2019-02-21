@@ -25,10 +25,10 @@
     }
 
     &__img{
-        background-image: url(../img/intro.jpeg);
+        background-image: url(../img/gallery-3-sm.jpg);
         background-size: cover;
         height: 40rem;
-        max-width: 40rem;
+        max-width: 60rem;
         margin: auto;
 
         @include respond(tab-land){
